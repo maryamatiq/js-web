@@ -2,9 +2,9 @@
 //String,Number,Boolean,Bigint,Null,undefined,symbol
 const value=Symbol('123')
 const value2=Symbol('123')
-console.log(typeof value);
-console.log(typeof value2);
-console.log(value===value2);//diff bcz Symbol creates a completely unique, one-of-a-kind value that can never be replicated
+// console.log(typeof value);
+// console.log(typeof value2);
+// console.log(value===value2);//diff bcz Symbol creates a completely unique, one-of-a-kind value that can never be replicated
 
 
 /*javaScript identifies data types using a 3-bit binary code, 3-bit binary code for a regular Object is 000
@@ -13,15 +13,34 @@ null represents a completely empty pointer, so js identify  it as an object*/
 //non-premitive datatypes
 //Arrays, objects, functions
 const arr=["farah","atiq","amna","zainab"]
-console.log(typeof arr);//type obj
+//console.log(typeof arr);//type obj
 const anObj={
     name:"maryam",
     age:21,
     cute:true
 };
-console.log(typeof anObj);
+//console.log(typeof anObj);
 let myF=function(){
     console.log("hello world");
     
 }
-console.log(typeof myF);
+//console.log(typeof myF);
+
+//********************************
+//stack(Premitive) , heap(non-premitive)
+let name="ayesha"
+let secondName=name;//gives copy of name
+//console.log(name);
+//console.log(secondName);
+secondName="aaima";
+//console.log(name);//so changing secondName did'nt affect name
+//console.log(secondName);
+let user1={
+    name:"maryam",
+    pass:"123"
+}
+let user2=user1;
+console.log(user1);
+user2.pass="246";
+console.log(user1)
+console.log(user2)
