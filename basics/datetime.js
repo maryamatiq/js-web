@@ -1,4 +1,4 @@
-//date
+//Date
 let anydate=new Date()
 //console.log(anydate);
 //console.log(anydate.toString())
