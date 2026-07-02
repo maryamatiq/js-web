@@ -36,3 +36,4 @@ console.log("B",arr);
 const n2=arr.splice(1,4)//range 1-4
 console.log("D",arr);//arr will change
 console.log("After splice",n2);
+
