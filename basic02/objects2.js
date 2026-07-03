@@ -50,10 +50,33 @@ const students=[
 // console.log(Object.entries(instaUser));//by default in array
 
 //Another way
-console.log(instaUser.hasOwnProperty('isloggedin'));
+//console.log(instaUser.hasOwnProperty('isloggedin'));
 
+//De-structuring object
+const course={
+    coursename:"AdobeIllustrator",
+    price:999,
+    courseInstructor:"talha bhatti"
+};
 
+//course["courseInstructor"]
+const {courseInstructor}=course//syntax
+//console.log(courseInstructor);//to access directly
 
+const {coursename:subjectname}=course
+//console.log(subjectname);//changing name through de- structuring
 
-
+//API'S THROUGH JSON-> Like object with no name
+// {
+//     name:"maryam",
+//     gender:"female"
+// } =>(syntax of JSON)
+//then learn how to use js or api to fetch data using methods
+//API'S also in array holding objects
+// [
+//     {},
+//     {},
+//     {}
+// ]
+//--->LIKE THIS
 
