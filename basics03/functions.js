@@ -35,4 +35,31 @@ function myname(name){
     
 }
 const n="maryam"
-myname()
+//myname()
+
+//Functions 
+function shoppingcart(val1,...item){
+    return item;
+}
+//Rest operator(...) is used to gather or return all parameters(values)
+//console.log(shoppingcart("book","frok","grinder"));
+
+//functions with object
+const product={
+    type:"electronics",
+    price:30000,
+    name:"Grinder"
+}
+function add_to_cart(thing){
+    console.log(`You bought ${thing.name} of ${thing.price} rupees`);
+}
+
+//add_to_cart(product);
+
+//function with Array
+const paymentmethod=["creditcard","cashondelivery","paypal"]
+function how_you_pay(pay){
+    return pay[2];
+
+}
+console.log("I'll pay by ",how_you_pay(paymentmethod));
