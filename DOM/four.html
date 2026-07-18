@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM|code & icecream</title>
+</head>
+<body style="background-color:black;color:white;">
+    <ul class="language">
+        <li>JAVASCRIPT </li>
+    </ul>
+</body>
+<script>
+    //add
+    function addlang(langname){
+        const li=document.createElement('li');
+        li.innerHTML=langname
+        document.querySelector('.language').appendChild(li)
+    }
+    //it traverse
+    addlang('python');
+    addlang('JAVA')
+
+//good approach
+    function addoptlang(langname){
+        const li=document.createElement('li');
+        li.appendChild(document.createTextNode(langname))
+        document.querySelector('.language').appendChild(li)
+    }
+    addoptlang('typescript')
+    
+
+    //Edit
+    const seclang=document.querySelector("li:nth-child(2)")
+    // seclang.innerHTML="ruby"
+    const newli=document.createElement('li')
+    newli.textContent="ruby"
+    seclang.replaceWith(newli)
+
+const thirdL=document.querySelector('li:nth-child(4)')
+const newtwo=document.createElement('li')
+newtwo.textContent='cpp'
+thirdL.replaceWith(newtwo)
+
+//remove
+const last=document.querySelector('li:nth-child(3)')
+last.remove();
+</script>
+</html>
